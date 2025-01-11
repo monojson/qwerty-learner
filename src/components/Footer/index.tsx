@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
 
   return (
     <>
-      <InfoPanel
+      {/* <InfoPanel
         openState={infoPanelState.donate}
         title="Buy us a coffee"
         icon={IconCoffee}
@@ -118,7 +118,7 @@ const Footer: React.FC = () => {
         <br />
         <p className="text-sm text-gray-500  dark:text-gray-400">再次感谢您的支持和关注！</p>
         <br />
-        <img className="ml-1 w-2/6 " src="https://qwerty.kaiyi.cool/weChat-group.png" alt="weChat-group" />
+        <img className="ml-1 w-2/6 " src="https://qwertylearner.com/weChat-group.png" alt="weChat-group" />
         <br />
       </InfoPanel>
 
@@ -145,10 +145,10 @@ const Footer: React.FC = () => {
         <img className="ml-1 w-5/12 " src={redBookCode} alt="redBook" />
         <p className="text-sm text-gray-500 dark:text-gray-400">Tips: 从小红书“我”的左上角点击 三 找到 扫一扫</p>
         <br />
-      </InfoPanel>
+      </InfoPanel> */}
 
       <footer className="mb-1 mt-4 flex w-full items-center justify-center gap-2.5 text-sm ease-in" onClick={(e) => e.currentTarget.blur()}>
-        <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noreferrer" aria-label="前往 GitHub 项目主页">
+        {/* <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noreferrer" aria-label="前往 GitHub 项目主页">
           <IconGithub fontSize={15} className="text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-100" />
         </a>
 
@@ -243,7 +243,16 @@ const Footer: React.FC = () => {
         </a>
         <span className="select-none rounded bg-slate-200 px-1 text-xs text-slate-600 dark:bg-slate-800 dark:text-slate-400">
           Build <span className="select-all">{LATEST_COMMIT_HASH}</span>
-        </span>
+        </span> */}
+        <a
+          href="mailto:contact@qwertylearner.com"
+          target="_blank"
+          rel="noreferrer"
+          onClick={(e) => e.currentTarget.blur()}
+          aria-label="发送邮件到 contact@qwertylearner.com"
+        >
+          <IconMail fontSize={16} className="text-gray-500 hover:text-indigo-400 dark:text-gray-400 dark:hover:text-indigo-400" />
+        </a>
       </footer>
     </>
   )
